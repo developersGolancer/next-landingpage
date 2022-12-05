@@ -1,0 +1,30 @@
+.trust-container{
+    background-color: #C54436;
+    .trust-preview{
+        direction: rtl;
+        color: #fff;
+        h1{
+            font-size: 28px;
+        }
+        p{
+            font-size: 22px;
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .trust-container{
+        padding: 0.5rem 1rem 0rem;
+        .trust-preview {
+            p, h1{
+                width: 100%;
+                text-align: center;
+                width: 100%;
+            }
+        }
+        .trust-img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,131 @@
+.header-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B0C5C;
+    position: relative;
+    .dots-vector{
+        width: 500px;
+        height: 80vh;
+    }
+    .users-box{
+        img{
+            width: 150px;
+            height: 150px;
+            border: 5px solid #fff;
+            border-radius: 100%;
+        }
+    }
+    .new-user-container{
+        position: absolute;
+        top: 6rem;
+        left: 10rem;
+    }
+    .new-user-two-container{
+        position: absolute;
+        top: 20rem;
+        left: 30rem;
+        p{
+            background-color: #3F7F68;
+            border-radius: 30px;
+            height: 30px;
+            width: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            margin: 0px !important;
+            position: absolute;
+            top: 0.1rem;
+            left: -7rem;
+            padding: 0.3rem 0.8rem;
+            span{
+                width: 15px;
+                height: 15px;
+                background-color: #C0F9AC;
+                border-radius: 100%;
+                margin-right: 10px;
+            }
+        }
+    }
+    .box{
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-end;
+        
+        h1{
+            // color: #0B0C5C;
+            color: #fff;
+            font-size: 42px;
+            text-align: right;
+        }
+        p{
+            width: 60%;
+            text-align: right;
+            font-size: 32px;
+            // color: #C54436;
+            color: #fff;
+        }
+        
+        .register-first{
+            button{
+                background-color: #C54436;
+                color: #fff;
+                border: none;
+                width: 350px;
+                height: 50px;
+                font-size: 20px;
+                &:hover{
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .header-container {
+        display: block;
+        padding: 0rem 1rem;
+        box-sizing: border-box;
+        margin-top: 2rem;
+        .dots-vector{
+            width: 100% !important;
+        }
+        .box {
+            width: 100%;
+            p, h1 {
+                width: 100% !important;
+                text-align: center;
+            }
+        }
+        .new-user-container{
+            position: absolute;
+            top: 5rem;
+            left: 0rem;
+        }
+        .new-user-two-container{
+            position: absolute;
+            top: 14rem;
+            left: 10rem;
+            p{
+                position: absolute;
+                top: -1rem;
+                left: -5rem;
+            }
+        }
+    }
+    .register-first{
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        button{
+            width: 300px !important;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.abotu-steps-container{
+    text-align: right;
+    background-color: #F4E6D4;
+    padding: 0rem 8rem 1rem;
+    .about-step-preview{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        padding: 1rem;
+        height: 100%;
+        position: relative;
+        h3{
+            font-size: 26px;
+            color: #0B0C5C;
+            margin: 1rem 0rem;
+            font-weight: bold;
+        }
+        p{
+            color: #0B0C5C;
+            font-weight: 300;
+            font-size: 22px;
+            margin: .5rem 0rem;
+        }
+    }
+
+    .about-step-image{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        img{
+            width: 550px;
+            height: 550px;
+            object-fit: contain;
+        }
+    }
+    .about-steps-image-controll-container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .about-steps-controll-container{
+        flex-direction: row-reverse !important;
+        align-items: flex-start ;
+        img{
+            width: 550px;
+            height: 550px;
+            object-fit: contain;
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .abotu-steps-container {
+        padding: 0rem 0.5rem 1rem;
+        .about-step-image {
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .about-steps-controll-container {
+           img{
+                width: 100%;
+               height: auto;
+           }
+        }
+    }
+    .about-step-preview{
+        p,h3{
+            text-align: center;
+        }
+    }
+}

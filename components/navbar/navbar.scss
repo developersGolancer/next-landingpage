@@ -1,0 +1,175 @@
+.navbar-container{
+    height: 80px;
+    background: #fff;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px #dddddd50;
+    .soical-links-container{
+        display: flex;
+        justify-content: flex-end;
+        
+    }
+    .links-container{
+        .icon-box{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .5s;
+            .soical-icon{
+                width: 20px;
+                fill: #0B0C5C; 
+            }
+            &:hover{
+                .soical-icon{
+                    fill: #fff; 
+                }
+                background-color: #0B0C5C;
+            }
+        }
+        .icon-container{
+            margin: 0rem 0rem 0rem 1rem;
+        }
+        .active-link{
+            opacity: 1;
+            font-weight: bolder;
+        }
+        
+        a{
+            color: #0B0C5C !important;
+            opacity: .7;
+            font-size: 18px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all .5;
+            font-weight: 500;
+            &:hover{
+                color: #0B0C5C !important;
+                opacity: 1;
+                transition: all .5;
+            }
+        }
+        .register-first{
+            button{
+                background-color: #C54436;
+                color: #fff;
+                border: none;
+                height: 40px;
+                width: auto;
+                font-size: 18px;
+                &:hover{
+                    transform: scale(1.03);
+                }
+            }
+        }
+    }
+    .logo-container{
+        img{
+            width: 200px;
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .navbar-container{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        padding: 0rem 1rem;
+        z-index: 999;
+        .logo-container{
+            img{
+                width: 150px !important;
+            }
+        }
+        .dropdown-mobile{
+            display: flex;
+            justify-content: flex-end;
+            
+            .menu-icon{
+                svg{
+                    width: 23px;
+                    height: 23px;
+                }
+            }
+        }
+    }
+    .mobile-menu-items{
+        background: #fff;
+        box-shadow: 0px 0px 10px #dddddd;
+        border-radius: 8px;
+        padding: 1rem 1rem 0.5rem;
+        position: fixed;
+        left: 1rem;
+        right: 1rem;
+        a{
+            display: block;
+            margin: 1rem 0rem;
+            font-size: 18px;
+            text-align: center;
+            color: #0B0C5C !important;
+            opacity: .7;
+            text-decoration: none;
+            transition: all .5;
+            font-weight: 500;
+            &:hover{
+                color: #0B0C5C !important;
+                opacity: 1;
+                transition: all .5;
+            }
+        }
+    }
+    .active-link{
+        opacity: 1 !important;
+        font-weight: bolder !important;
+    }
+    .ant-dropdown{
+        left: 30px !important;
+        top: 3.5rem !important;
+        width: 320px !important;
+        direction: rtl;
+    }
+    .mobile-soical-links{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .icon-box{
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .5s;
+            .soical-icon{
+                width: 20px;
+                fill: #0B0C5C; 
+            }
+            &:hover{
+                .soical-icon{
+                    fill: #fff; 
+                }
+                background-color: #0B0C5C;
+            }
+        }
+    }
+    .mobile-register-first{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        button{
+            background-color: #C54436;
+            color: #fff;
+            border: none;
+            height: 40px;
+            width: auto;
+            font-size: 18px;
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+    }
+}

@@ -1,0 +1,105 @@
+.how-it-work-container{
+    background: #F4E6D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    position: relative;
+    .steps-container{
+        width: 80%;
+        text-align: right;
+
+        .step-preview{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+            padding: 1rem;
+            height: 100%;
+            position: relative;
+            h3{
+                font-size: 26px;
+                color: #C54436;
+                margin: 1rem 0rem;
+                font-weight: bold;
+            }
+            h6{
+                color: #0B0C5C;
+                font-weight: bold;
+                font-size: 22px;
+                margin: .5rem 0rem;
+
+            }
+            p{
+                color: #0B0C5C;
+                font-weight: 500;
+                font-size: 22px;
+                margin: .5rem 0rem;
+            }
+        }
+
+        .step-image{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-size: 26px;
+                color: #C54436;
+                margin: 1rem 0rem;
+                font-weight: bold;
+                
+            }
+            .user-position{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h4{
+                    margin: .5rem 0rem;
+                    font-size: 18px;
+                    color: #0B0C5C;
+                }
+                span{
+                    font-size: 18px;
+                    color: #0B0C5C;
+                }
+            }
+        }
+        .steps-controll-container{
+            flex-direction: row-reverse !important;
+        }
+        .preview-line-img{
+            position: absolute;
+            top: 34rem;
+            left: 33rem;
+        }
+        .preview-line2-img{
+            position: absolute;
+            top: 67rem;
+            left: 28rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 680px){
+    .step-image{
+        img {
+            width: 100%;
+        }
+    }
+    .preview-line-img, .preview-line2-img{
+        display: none;
+    }
+    .how-it-work-container{
+        padding: 1rem;
+        .steps-container{
+            width: 100%;
+            .step-preview{
+                text-align: center;
+                padding: 0rem;
+            }
+        } 
+    }
+}

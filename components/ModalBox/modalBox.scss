@@ -1,0 +1,37 @@
+.modal-container{
+    direction: rtl;
+    .actions-container{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        border-top: 1px solid #ddd;
+        margin-top: 2rem;
+        padding-top: 1rem;
+        button{
+            margin-right: 1rem;
+            margin-bottom: 0rem;
+        }
+        .ant-form-item{
+            margin: 0px !important;
+        }
+    }
+    
+    .ant-form-item{
+        margin-top: 1rem;
+        margin-bottom: 0rem;
+    }
+    .ant-form-item-row {
+        width: 100% !important;
+    }
+    .ant-form-item-control{
+        max-width: 100% !important;
+    }
+    .label{
+        display: block;
+        margin-top: .5rem !important;
+        margin-bottom: -.5rem !important;
+    }
+}
+.register-input{
+    width: 100% !important;
+}

@@ -1,0 +1,36 @@
+.about-header-container{
+    padding: 1rem 6rem;
+    .about-header-preview{
+        direction: rtl;
+        h1{
+            font-size: 38px;
+            width: 70%;
+            color: #0B0C5C;
+        }
+        p{
+            width: 70%;
+            font-size: 28px;
+            color: #C54436;
+        }
+    }
+}
+
+@media screen and (max-width: 680px){
+    .about-header-container{
+        padding: 1rem;
+        margin-top: 3rem;
+        .about-header-preview {
+            h1{
+                width: 100%;
+                text-align: center;
+            }
+            p{
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .about-header-img{
+            width: 100%;
+        }
+    }
+}
