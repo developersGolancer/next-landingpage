@@ -32,7 +32,7 @@ function Footer() {
             <Row>
               <Col xs={3} sm={3} md={2} lg={2} xl={2}>
                 <Link
-                  href="https://www.facebook.com/?ref=tn_tnmn"
+                  href="https://www.facebook.com/golancer0"
                   passHref={true}
                   target="_blank"
                 >
@@ -49,7 +49,7 @@ function Footer() {
               </Col>
               <Col xs={3} sm={3} md={2} lg={2} xl={2}>
                 <Link
-                  href="https://www.instagram.com"
+                  href="https://www.instagram.com/golancer.tech/"
                   passHref={true}
                   target="_blank"
                 >
@@ -64,7 +64,7 @@ function Footer() {
                   </div>
                 </Link>
               </Col>
-              <Col xs={3} sm={3} md={2} lg={2} xl={2}>
+              {/* <Col xs={3} sm={3} md={2} lg={2} xl={2}>
                 <Link
                   href="https://www.linkedin.com"
                   passHref={true}
@@ -81,7 +81,7 @@ function Footer() {
                     </svg>
                   </div>
                 </Link>
-              </Col>
+              </Col> */}
             </Row>
           </div>
         </Col>
