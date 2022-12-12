@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>GoLancer</title>
         <meta name="description" content="Golancer is a web app for traning" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
