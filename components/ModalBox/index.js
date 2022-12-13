@@ -97,7 +97,7 @@ function ModalBox({ status, setModalStatus }) {
               onChange={() => setShowErrorMessage(false)}
             />
           </Form.Item>
-          <label className="label"> كلمة المرور </label>
+          {/* <label className="label"> كلمة المرور </label>
           <Form.Item
             name="password"
             rules={[{ required: true, message: "الرجاء ادخال البيانات" }]}
@@ -108,7 +108,7 @@ function ModalBox({ status, setModalStatus }) {
               type="password"
               onChange={() => setShowErrorMessage(false)}
             />
-          </Form.Item>
+          </Form.Item> */}
           <div className="actions-container">
             <Form.Item>
               <Button type="primary" htmlType="submit">

@@ -50,7 +50,7 @@ function HowItWork() {
 
   return (
     <div className="how-it-work-container">
-      <div className="section-title">
+      <div className="how-it-work-section-title">
         <h1> كيف تعمل قولانسر </h1>
       </div>
       <div className="steps-container">
@@ -71,26 +71,30 @@ function HowItWork() {
                   <div className="step-image">
                     {item.start && <h3> البداية </h3>}
                     <img src={item.image} />
-                    <div className="user-position">
+                    {/* <div className="user-position">
                       <h4> {item.name} </h4>
                       <span> {item.position} </span>
-                    </div>
+                    </div> */}
                   </div>
                 </Col>
               </Row>
               {index == 0 ? (
-                <img
-                  src="/images/preview-line1.png"
-                  className="preview-line-img"
-                />
+                <div className="line-container">
+                  <img
+                    src="/images/preview-line1.png"
+                    className="preview-line-img"
+                  />
+                </div>
               ) : (
                 ""
               )}
               {index == 1 ? (
-                <img
-                  src="/images/preview-line2.png"
-                  className="preview-line2-img"
-                />
+                <div className="line-container">
+                  <img
+                    src="/images/preview-line2.png"
+                    className="preview-line2-img"
+                  />
+                </div>
               ) : (
                 ""
               )}

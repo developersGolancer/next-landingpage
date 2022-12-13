@@ -43,11 +43,12 @@ function WhyGolancer() {
   return (
     <div>
       <div className="abotu-steps-container">
+        <h1> لماذا قولانسر </h1>
         {data?.map((item, index) => {
           return (
             <div className="about-step-box">
               <Row
-                className={index % 2 ? "about-steps-controll-container" : ""}
+                className={index % 2 ? "" : "about-steps-controll-container"}
               >
                 <Col xs={24} sm={24} md={12} lg={12} xl={12}>
                   <div className="about-step-preview">

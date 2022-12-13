@@ -2,6 +2,13 @@
     text-align: right;
     background-color: #F4E6D4;
     padding: 0rem 8rem 1rem;
+    h1{
+        font-size: 35px;
+        color: #0B0C5C;
+        margin: 0px;
+        padding: 3rem 0rem 0rem;
+        font-weight: bolder;
+    }
     .about-step-preview{
         display: flex;
         flex-direction: column;
@@ -27,32 +34,34 @@
     .about-step-image{
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
+        align-items: flex-start;
         img{
-            width: 550px;
-            height: 550px;
+            width: 70%;
             object-fit: contain;
         }
     }
     .about-steps-image-controll-container{
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-end;
     }
     .about-steps-controll-container{
         flex-direction: row-reverse !important;
-        align-items: flex-start ;
+        align-items: center ;
         img{
-            width: 550px;
-            height: 550px;
+            width: 70%;
             object-fit: contain;
         }
     }
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 900px){
     .abotu-steps-container {
         padding: 0rem 0.5rem 1rem;
+        h1{
+            padding: 2rem 0rem 0rem;
+            text-align: center;
+        }
         .about-step-image {
             img{
                 width: 100%;
@@ -60,10 +69,16 @@
             }
         }
         .about-steps-controll-container {
-           img{
+            img{
                 width: 100%;
                height: auto;
            }
+        }
+        .about-steps-image-controll-container{
+            img{
+                 width: 100%;
+                height: auto;
+            }
         }
     }
     .about-step-preview{
