@@ -10,15 +10,14 @@ function ModalBox({ status, setModalStatus }) {
   };
   const onFinish = (values) => {
     // values are here ....
-    const { username, email, password, mobile } = values;
+    const { username, email, mobile } = values;
     console.log("Success:", values);
     const data = {
       username,
       email,
-      password,
       mobile,
     };
-    if (username && email && password && mobile) {
+    if (username && email && mobile) {
       RegisterNewUser(data).then((res) => {
         if (res.Message == "User is already Exist") {
           setShowErrorMessage(true);
