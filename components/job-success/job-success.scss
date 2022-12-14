@@ -31,6 +31,14 @@
     .card{
         padding: 1rem 0rem;
     }
+    .job-success-img-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        img {
+            width: 90%;
+        }
+    }
 }
 
 @media screen and (max-width: 680px){

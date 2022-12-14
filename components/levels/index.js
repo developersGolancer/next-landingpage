@@ -4,7 +4,7 @@ import React from "react";
 function Levels() {
   return (
     <div className="levels-container">
-      <Row>
+      <Row className="levels-container-sections-row">
         <Col
           xs={24}
           sm={24}
