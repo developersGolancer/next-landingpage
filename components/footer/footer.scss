@@ -58,11 +58,18 @@
         direction: rtl;
         display: flex;
         align-items: center;
+        span{
+            width: 100%;
+            display: flex;
+            align-items: center;
+        }
         input{
             height: 40px;
+            border-radius: 6px 0px 0px 6px;
+            border: none;
         }
         button{
-            height: 40px;
+            height: 42px;
             width: 200px;
             background-color: #33333399;
             &:hover{
