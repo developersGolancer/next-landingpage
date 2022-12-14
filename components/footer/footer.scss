@@ -56,6 +56,8 @@
     .footer-register-box{
         margin-top: 2rem;
         direction: rtl;
+        display: flex;
+        align-items: center;
         input{
             height: 40px;
         }
